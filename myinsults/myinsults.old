@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+#
+# Random insult display script using ANSI colors.
+# Place insults in ~/scripts/myinsults/insults.txt (one per line).
+# Add or remove colors by editing the COLORS array below.
+
+INSULT_FILE="$HOME/scripts/myinsults/insults.txt"
+
+# Define colors (bright and readable on black background)
+COLORS=(
+    "\e[91m"       # Bright Red (easier on black)
+    "\e[92m"       # Bright Green
+    "\e[93m"       # Bright Yellow
+    "\e[94m"       # Bright Blue
+    "\e[95m"       # Bright Magenta / Purple
+    "\e[96m"       # Bright Cyan
+#    "\e[97m"       # Bright White (commented out for later)
+    "\e[38;5;208m" # Orange
+    "\e[38;5;45m"  # Bright Aqua
+    "\e[38;5;201m" # Hot Pink
+    "\e[38;5;82m"  # Neon Green
+    "\e[38;5;226m" # Gold / Yellow-orange
+    "\e[38;5;51m"  # Sky Blue
+    "\e[38;5;129m" # Orchid / Light Purple
+    "\e[38;5;214m" # Coral
+)
+RESET="\e[0m"
+
+# Check if insult file exists
+if [[ ! -f "$INSULT_FILE" ]]; then
+    echo -e "\e[31mNo insults.txt found at $INSULT_FILE\e[0m"
+    exit 1
+fi
+
+# Read insults (ignore blank lines)
+mapfile -t INSULTS < <(grep -v '^[[:space:]]*$' "$INSULT_FILE")
+
+# Check if any insults were found
+if [[ ${#INSULTS[@]} -eq 0 ]]; then
+    echo -e "\e[31mNo insults found in $INSULT_FILE\e[0m"
+    exit 1
+fi
+
+# Pick a random insult and colors
+INSULT="${INSULTS[RANDOM % ${#INSULTS[@]}]}"
+INSULT=" $INSULT"  # leading space for readability
+
+INSULT_COLOR="${COLORS[RANDOM % ${#COLORS[@]}]}"
+BORDER_COLOR="${COLORS[RANDOM % ${#COLORS[@]}]}"
+
+# Ensure border and insult colors are not the same (optional but nicer)
+while [[ "$BORDER_COLOR" == "$INSULT_COLOR" ]]; do
+    BORDER_COLOR="${COLORS[RANDOM % ${#COLORS[@]}]}"
+done
+
+# Build border line based on insult length
+INSULT_LEN=$((${#INSULT} + 1))
+BORDER_LINE=$(printf '%*s' "$INSULT_LEN" '' | tr ' ' '=')
+
+# Print framed output
+echo -e "${BORDER_COLOR}${BORDER_LINE}${RESET}"
+echo -e "${INSULT_COLOR}${INSULT}${RESET}"
+echo -e "${BORDER_COLOR}${BORDER_LINE}${RESET}"

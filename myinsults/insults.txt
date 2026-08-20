@@ -1,0 +1,101 @@
+You type slower than a Raspberry Pi compiling LibreOffice
+Your code style deserves its own horror documentary
+You call that uptime? My toaster’s more reliable
+Your CPU called — it wants a less embarrassing user
+You must be running on swap memory today
+Even systemd can’t rescue your startup sequence
+You’ve got more bugs than a Debian testing repo
+You write shell scripts like it’s your first day with a keyboard
+Your terminal just rolled its eyes at you
+You make Nano look like a professional IDE
+You’d break less stuff if you read the man page once
+You debug with the grace of a drunk penguin
+You make cron jobs look unreliable
+Even Vim would quit if it had to watch you type
+Your logic has more loops than /dev/null has data
+You code like someone who’s allergic to indentation
+Your shell history is a museum of bad decisions
+Your uptime’s impressive, but your intelligence reboots hourly
+You configure Arch like a toddler with root access
+Your code compiles only out of pity
+You treat semicolons like optional accessories
+Your comments explain less than your variable names
+Your syntax errors deserve their own support group
+Your password strength matches your typing skills
+Even Emacs couldn’t save your workflow
+You’re slower than a pensioner on dial-up
+Your bash prompt just sighed when you opened it
+You’ve got more aliases than a shady sysadmin
+You’re proof that `rm -rf` should come with training wheels
+Your Wi-Fi signal is stronger than your problem-solving
+You handle errors like Windows handles updates
+Your typing accuracy could use a checksum
+Even your loops need therapy
+You’d make fewer mistakes if you used a rubber keyboard
+Your IQ must be running in safe mode
+You code like you’re allergic to documentation
+You probably chmod 777 your home directory, don’t you?
+Your workflow has more crashes than Firefox in 2004
+Your system log called — it wants a restraining order
+You use sudo the way toddlers use sugar
+You’d forget your password even if it was 'password'
+You code like someone who reads Stack Overflow in reverse
+Your indentation makes Python developers cry
+Your shell scripts have trust issues
+You make Bash look like PowerPoint
+Even grep can’t find your competence
+You’re the human equivalent of a missing semicolon
+Your command history should be classified as a cautionary tale
+You debug like someone negotiating with their computer
+You install Arch for the street cred, not the stability
+You’re living proof that 'man' isn’t short for 'manual reader'
+You have the confidence of someone who’s never been right
+Your personality is a loading screen with no progress bar
+You bring the energy of a Monday morning
+You have the charisma of damp cardboard
+You’re not useless, just impressively inefficient
+You make awkward look like a full-time job
+You have the timing of a broken clock
+You’re about as inspiring as an empty room
+You manage to disappoint in record time
+You have the charm of a locked door
+You’re not boring, just aggressively uninteresting
+You have the enthusiasm of a wet sock
+You could make silence feel uncomfortable
+You’re the human version of background noise
+You have the presence of a forgotten thought
+You bring absolutely nothing to the table
+You’re as motivating as a flat battery
+You have the spark of a burnt-out bulb
+You make mediocrity look ambitious
+You’re the reason expectations stay low
+You have the impact of a gentle shrug
+You’re about as memorable as yesterday’s weather
+You make average look exceptional
+You have the vibe of an unanswered question
+You’re not confusing, just consistently wrong
+You bring the mood down without trying
+You have the drive of a parked car
+You’re the definition of barely trying
+You have the edge of a blunt spoon
+You’re not lost, just permanently misplaced
+You have the urgency of a paused video
+You make doing nothing look exhausting
+You have the focus of a wandering thought
+You’re about as sharp as a rubber ball
+You have the presence of a closed tab
+You make simple things unnecessarily difficult
+You have the rhythm of a skipping track
+You’re not unlucky, just predictably disappointing
+You have the appeal of a blank page
+You’re the human equivalent of a long pause
+You have the momentum of a stopped clock
+You make hesitation look decisive
+You have the confidence of a wrong answer
+You’re about as useful as a second yawn
+You have the clarity of fog
+You make quiet feel loud
+You have the reliability of a weak excuse
+You’re not subtle, just ineffective
+You have the warmth of a cold handshake
+You make nothing seem like too much effort
