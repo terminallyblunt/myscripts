@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ============================================================================
-#  System Update Menu (Arch Linux)
+#  System Update Menu (Arch Linux) Version 1.0
 # ============================================================================
 #  A small interactive CLI tool for running common system update commands.
 #
