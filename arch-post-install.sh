@@ -2,7 +2,7 @@
 set -e
 
 # =========================
-# Arch Post-Install Script (Version 1.0.13)
+# Arch Post-Install Script (Version 1.0.15)
 # Single-line package arrays
 # Clean section spacing and package previews
 # =========================
@@ -143,6 +143,26 @@ else
 fi
 
 # =====================
+# Appearance Tools
+# =====================
+APPEARANCE_PKGS=(qt5ct qt6ct lxappearance nwg-look)
+if ask_with_packages "Install GTK and Qt appearance tools?" "${APPEARANCE_PKGS[@]}"; then
+    install_section "Appearance Tools" "${APPEARANCE_PKGS[@]}"
+else
+    print_info "Skipping Appearance Tools"
+fi
+
+# =======================
+# DankMaterialShell (DMS)
+# =======================
+DMS_PKGS=(dms-shell matugen)
+if ask_with_packages "Install DankMaterialShell & its dynamic theming support?" "${DMS_PKGS[@]}"; then
+    install_section "DankMaterialShell" "${DMS_PKGS[@]}"
+else
+    print_info "Skipping DankMaterialShell"
+fi
+
+# =====================
 # Web Browsers
 # =====================
 WEB_BROWSERS_PKGS=(firefox chromium)
@@ -156,4 +176,3 @@ fi
 # Script Completion
 # =====================
 print_header "Post-install base setup complete"
-
