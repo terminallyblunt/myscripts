@@ -2,9 +2,12 @@
 set -e
 
 # =========================
-# Arch Post-Install Script (Version 1.0.15)
+# Arch Post-Install Script (Version 1.0.16)
 # Single-line package arrays
 # Clean section spacing and package previews
+#
+# Author: Terminally Blunt
+# URL:    https://github.com/terminallyblunt
 # =========================
 
 # --- Colors ---
@@ -74,7 +77,7 @@ update_system
 # =====================
 # Essential Utilities
 # =====================
-ESSENTIAL_PKGS=(git github-cli wget curl htop fastfetch less unzip zip man-db man-pages bash-completion python tk reflector)
+ESSENTIAL_PKGS=(git github-cli wget curl htop fastfetch less unzip zip man-db man-pages bash-completion python tk reflector pacman-contrib)
 if ask_with_packages "Install Essential Utilities?" "${ESSENTIAL_PKGS[@]}"; then
     install_section "Essential Utilities" "${ESSENTIAL_PKGS[@]}"
 else
